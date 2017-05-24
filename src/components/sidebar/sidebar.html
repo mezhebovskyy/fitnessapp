@@ -1,0 +1,9 @@
+<div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+        <ul class="nav" id="side-menu">
+            <li ng-repeat="menuItem in $ctrl.menuItems">
+                <a ui-sref="{{menuItem.uiSref}}" ui-sref-active="active"><i class="fa fa-fw" ng-class="menuItem.icon"></i>{{menuItem.title}}</a>
+            </li>
+        </ul>
+    </div>
+</div>
